@@ -1,7 +1,7 @@
-# src/generators/graphql.py
+# Imports
 from datetime import datetime
 import random
-from .base import BaseGenerator
+from .base_generator import BaseGenerator
 
 
 class GraphQLGenerator(BaseGenerator):
