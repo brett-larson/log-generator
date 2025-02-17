@@ -1,9 +1,13 @@
-from formatters.multiline_formatter import MultilineFormatter
+from formatters.multi_line import MultilineFormatter
 from generators.graphql import GraphQLGenerator
 
-# Create a generator with multiline formatting
-formatter = MultilineFormatter(indent=2)
-generator = GraphQLGenerator(formatter)
+def main():
+    # Create a generator with multiline formatting
+    formatter = MultilineFormatter(indent=2)
+    generator = GraphQLGenerator(formatter)
 
-# Generate logs
-generator.generate_log()
+    # Generate logs
+    generator.generate_log()
+
+if __name__ == "__main__":
+    main()
